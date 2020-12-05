@@ -1,0 +1,14 @@
+<launch>
+    <node name="armLogic" pkg="two_wheels_description" type="armToPoint.py"  output="screen">
+    </node>
+    <node name="gripperLogic" pkg="two_wheels_description" type="gripperMovent.py" output="screen" >
+    </node>
+    <node name="armPathLogic" pkg="two_wheels_description" type="armPath.py"  output="screen">
+    </node>
+    <node name="attachLogic" pkg="two_wheels_description" type="attach.py" output="screen">
+    </node> 
+    <node name="vision" pkg="two_wheels_description" type="vision.py" >
+    </node>
+    
+ 
+</launch>
